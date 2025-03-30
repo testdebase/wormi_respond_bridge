@@ -3,7 +3,7 @@ import requests
 
 app = FastAPI()
 
-LOCAL_SERVER_URL = "http://<TON_IP_LOCALE>:8000/respond"  # à remplacer !
+LOCAL_SERVER_URL = "http://169.254.123.117:8000/respond"  # à remplacer !
 
 @app.post("/respond")
 async def respond(request: Request):
